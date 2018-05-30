@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+}
+
+#container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-right: 0.5em;
+}
+.menu > * {
+    display: block;
+    border: 1px solid #c7c7c7;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.menu > div:hover {
+    background-color: #f0f0f0;
+}
+
+.pages {
+    width: 80%;
+}
+.pages .page {
+    display: block;
+    border: 1px solid #c7c7c7;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+.pages .page h1 {
+    margin-top: 0.5em;
+}
+

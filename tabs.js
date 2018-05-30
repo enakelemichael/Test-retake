@@ -1,19 +1,17 @@
 function create_tabs(container_id) 
 {
 
-var coll = document.getElementsByClassName("container");
-var i;
+  const $pageA = $('.page');
+  const $headingA = $('h1').eq(0);
+  const $headingB = $('h1').eq(1);
+  const $headingC = $('h1').eq(2);
+  
+  $buttonA = $("<button id='btn-a'>" + $headingA + "</button>");
+  $buttonB = $("<button id='btn-b'>" + $headingB + "</button>");
+  $buttonC = $("<button id='btn-c'>" + $headingC + "</button>");
 
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var page = this.nextElementSibling;
-        if (page.style.display === "block") {
-            page.style.display = "none";
-        } else {
-            page.style.display = "block";
-        }
-    });
-}
+  $menu.append($buttonA);
+  $menu.append($buttonB);
+  $menu.append($buttonC);
 
 }

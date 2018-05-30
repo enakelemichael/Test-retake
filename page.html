@@ -6,7 +6,7 @@
     <title>Tabs</title>
     <link rel="stylesheet" href="style.css">
     <script src="jquery-3.2.1.min.js"></script>
-    <script src="tabs.js"></script>
+    
 </head>
 <body>
 
@@ -44,24 +44,7 @@
 
     </div>
 
-    <script>
-create_tabs('container');
-
-var coll = document.getElementsByClassName("container");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var page = this.nextElementSibling;
-        if (page.style.display === "block") {
-            page.style.display = "none";
-        } else {
-            page.style.display = "block";
-        }
-    });
-}
-    </script>
+<script src="tabs.js"></script>
     
 </body>
 </html>
